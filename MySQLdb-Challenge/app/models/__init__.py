@@ -88,20 +88,6 @@ class State:
         
         self.db.cursor.execute(query, state)
 
-        # If query execution is successful
-        # if self.db.cursor.rowcount:
-        #     # Commit data to the database
-        #     self.db.conn.commit()
-        #     return "Updated Successfully"
-        # else:
-        #     return "Error updating the database"
-            # return {
-            #     "name": self.name,
-            #     "abbreviation": self.abbreviation,
-            #     "capital": self.capital,
-            #     "population": self.population,
-            #     "year_admitted": self.year_admitted
-            # }
             
     def delete_state(self, id):
        
@@ -271,3 +257,5 @@ class State:
                 }
                 self.states.append(state)
             return self.states
+        
+        
